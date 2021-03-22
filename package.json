@@ -1,0 +1,48 @@
+{
+	"name": "lordran-ipsum",
+	"displayName": "lordran-ipsum",
+	"description": "",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.54.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:lordran-ipsum.lordran-ipsum"
+	],
+	"main": "./extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "lordran-ipsum.lordran-ipsum",
+				"title": "Lordran Ipsum"
+			},
+			{
+				"command": "lordran-ipsum.lordran-paragraph",
+				"title": "Lordran Ipsum Paragraph"
+			},
+			{
+				"command": "lordran-ipsum.lordran-sentence",
+				"title": "Lordran Ipsum Sentence"
+			}
+		]
+	},
+	"scripts": {
+		"lint": "eslint .",
+		"pretest": "npm run lint",
+		"test": "node ./test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.54.0",
+		"@types/glob": "^7.1.3",
+		"@types/mocha": "^8.0.4",
+		"@types/node": "^12.11.7",
+		"eslint": "^7.19.0",
+		"glob": "^7.1.6",
+		"mocha": "^8.2.1",
+		"typescript": "^4.1.3",
+		"vscode-test": "^1.5.0"
+	}
+}
